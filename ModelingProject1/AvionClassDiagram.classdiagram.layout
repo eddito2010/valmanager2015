@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 10.375" name="AvionClassDiagram">
+  <logicalClassDesignerModelMoniker Id="c647f5b4-063c-41ad-ad9f-c4ba1c4292e9" />
+  <nestedChildShapes>
+    <classShape Id="a70024a2-2aa2-47ff-871a-fd8244cd5a5a" absoluteBounds="7.375, 0.75, 1.5, 1.3479918644825619" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="342d0418-a546-494b-90f1-01f17c054231" LastKnownName="FlotaAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="5a7a2a4a-c74f-4b2c-902e-c3adf497ec97" absoluteBounds="7.39, 1.2653356393178306, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="abe08ac2-1f7f-4538-9f13-a71fed7cb7c3" absoluteBounds="7.39, 1.7968199969331422, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f961f406-e396-4f2c-872a-caa447c303a3" absoluteBounds="7.375, 2.125, 1.5, 1.3479918644825619" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="0ae429ad-97e0-40a4-8f4c-4c163c8ba30b" LastKnownName="CategoriaAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="2f62e73a-5a3e-4c87-9017-6f391475c964" absoluteBounds="7.39, 2.6403356393178306, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="50acad1f-8fd0-446d-98e9-060c310cb6e4" absoluteBounds="7.39, 3.1718199969331424, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2f832fe2-d335-497b-b0c0-608645ad035a" absoluteBounds="1.625, 1.125, 1.5, 1.3479918644825619" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="7c3aed87-f02a-4f99-9310-ce5287e7f3c7" LastKnownName="AvionCategoria" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ab699a48-c395-4bd6-9185-fe845b1ed350" absoluteBounds="1.64, 1.6403356393178306, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2b717082-8479-42bb-8ea4-2a15dd6a110f" absoluteBounds="1.64, 2.1718199969331424, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="038848c8-8b07-427c-914f-bff1a7e91469" absoluteBounds="1.625, 2.625, 1.5, 3.5901792949438089" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="258d1dee-d5b7-4519-8ec6-41e352498c03" LastKnownName="AvionMatricula" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0d5310fc-8d83-4fc9-b409-a69e07a721c7" absoluteBounds="1.64, 3.1403356393178306, 1.4700000000000002, 2.7636717880765596" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2b439938-b48b-4586-a90e-48d0fa6a0ffa" absoluteBounds="1.64, 5.91400742739439, 1.4700000000000002, 0.20117186754941985" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb0a04fc-e880-4be0-ba28-80c69cbd5072" absoluteBounds="7.5, 3.5, 3.5, 2.1487730896472925" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="3965a021-f237-41a7-8d47-7f0f8232bb15" LastKnownName="ConfiguracionPaxAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="991dfccc-95c8-44a0-aaaf-b5553c5976b1" absoluteBounds="7.515, 4.01533563931783, 3.4699999999999998, 1.3222655827800431" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="717f40d9-9db9-4ae4-ae17-e59004fbb404" absoluteBounds="7.515, 5.3476012220978735, 3.4699999999999998, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a0ce663-9a11-47a4-8615-e12e9819e14d" absoluteBounds="5.375, 3.75, 1.5, 1.6683043545484537" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="5c5c1139-9314-4636-a15b-821d93581246" LastKnownName="ConfiguracionCargaAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="c5b2c320-a477-4584-b10e-78f7669fb136" absoluteBounds="5.39, 4.26533563931783, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ee60406b-716c-412f-bfd5-edf83d375d08" absoluteBounds="5.39, 5.1171324869990347, 1.4700000000000002, 0.20117186754941985" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="20f35a09-fa97-4b66-801f-8ef9cd25c2e8" absoluteBounds="3.375, 8, 1.5, 1.3479918644825606" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="c16849d8-e0ad-42bb-a108-e99383fb4f29" LastKnownName="AvionModelo" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="634a2175-f940-46b3-b18a-526f253d8591" absoluteBounds="3.39, 8.515335639317831, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="9f94533a-a282-4180-b18e-af0b8366cd75" absoluteBounds="3.39, 9.0468199969331415, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0825df1f-736b-4d0b-be7f-c391e4d829d1" absoluteBounds="3.375, 4.5, 1.5, 1.8284605995814003" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="d98ce906-f7f4-423e-956a-8f146ea09085" LastKnownName="AvionMotor" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="df1beebf-3501-42b0-bd89-e8c08ce5def4" absoluteBounds="3.39, 5.01533563931783, 1.4700000000000002, 1.0019530927141505" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="7e624580-cd14-4fc5-8d2e-7fff1e13748c" absoluteBounds="3.39, 6.0272887320319812, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cec682c6-1f31-4a86-ada7-a6d897927fb6" absoluteBounds="5.375, 2.125, 1.5, 1.5081481095155085" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="6f785964-02eb-4d4d-9e5a-f88e2383a75a" LastKnownName="TipoMotorAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="006512b9-a51b-4f03-a91b-1211bd154bc4" absoluteBounds="5.39, 2.6403356393178306, 1.4700000000000002, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="53326493-ae03-4a26-b762-e8dfe7096c23" absoluteBounds="5.39, 3.331976241966089, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1001f60-f720-4b35-a226-0a4ca217d5aa" absoluteBounds="5.375, 0.75, 1.5, 1.3479918644825619" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="c6f64dcb-6241-49df-bac7-5fe332f09066" LastKnownName="FabricanteMotorAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="0feef2c9-bbfc-4522-a44f-74b009ca1d17" absoluteBounds="5.39, 1.2653356393178306, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="fe1bcd49-c2d7-46ff-8abf-196a73df4299" absoluteBounds="5.39, 1.7968199969331422, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2664edc0-37e2-4b81-a218-5011a917a3a1" absoluteBounds="3.375, 1.125, 1.5, 1.8284605995814007" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="f1edf5cf-7835-4330-8d7e-3cc9755103d6" LastKnownName="Avion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="93feced3-75f5-4e9e-a527-6e76c572815b" absoluteBounds="3.39, 1.6403356393178306, 1.4700000000000002, 1.0019530927141505" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2ad055ed-da2e-46ba-9f0c-44d8dcecb6bd" absoluteBounds="3.39, 2.6522887320319812, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d028f64-8438-4381-92e5-801fcdc1fcab" absoluteBounds="7.5, 5.625, 1.5, 1.3479918644825615" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="7a262830-4634-4365-8591-b5e2f3e90d74" LastKnownName="FabricanteAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="5e036468-f9d1-4962-9357-33819329bf24" absoluteBounds="7.515, 6.14033563931783, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="41801a67-5c28-410a-b55b-3e27f20acae1" absoluteBounds="7.515, 6.6718199969331424, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ce80554-71e9-4081-b516-6bed73670226" absoluteBounds="3.375, 6.25, 1.5, 1.6683043545484537" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="97549234-3492-4458-86c4-35e671e4f437" LastKnownName="AvionAPU" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="799d53be-3ef2-4b45-a1b6-ff9b8dc1ddab" absoluteBounds="3.39, 6.76533563931783, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="886fdf38-0837-4014-a42f-be875c475604" absoluteBounds="3.39, 7.6171324869990347, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02c5b387-ea18-41e1-83d4-8b10da2a4e20" absoluteBounds="7.5, 7, 1.5, 1.3479918644825606" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="2824bf45-b437-4e08-8aa5-67e22e567d63" LastKnownName="TipoTrenAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="df9bffb6-69ac-4b81-b9d9-32913332aa23" absoluteBounds="7.515, 7.51533563931783, 1.4700000000000002, 0.52148435761531176" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="d0393313-4217-42e6-9a8e-705e1c7a3f7e" absoluteBounds="7.515, 8.0468199969331415, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="213c07e4-b902-4571-b178-98c9780a451b" absoluteBounds="1.125, 6.25, 2.125, 1.9886168446143469" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="c6aca9fe-d7e0-42a7-8845-3acb52213070" LastKnownName="AvionTren" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="f9ae56a4-15c4-4350-8b6c-2d5278b74e84" absoluteBounds="1.14, 6.76533563931783, 2.0949999999999998, 1.162109337747097" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="4c6aef76-d291-4b84-b773-b68419dafa4e" absoluteBounds="1.14, 7.9374449770649278, 2.0949999999999998, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8342edc-31ad-4a02-87ef-04de68ee5102" absoluteBounds="3.375, 2.875, 1.5, 1.6683043545484537" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="0b69fa64-5315-4840-b81e-152abb26b090" LastKnownName="AvionFlap" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="aae15a6e-6827-4d72-8f19-a9a53b111c5e" absoluteBounds="3.39, 3.3903356393178306, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2cd06fcf-c1c9-494d-92bd-849c8a2858dd" absoluteBounds="3.39, 4.2421324869990347, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="48529bf9-d78b-4812-b5b6-44f16b69f7c9" absoluteBounds="1.125, 8.5, 2.125, 1.6683043545484537" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="f56ebb8a-e839-4fa4-9583-43afbf6b6b22" LastKnownName="AvionBateria" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ee9965ca-4fa6-4483-91a5-384b4e47f4cc" absoluteBounds="1.14, 9.015335639317831, 2.0949999999999998, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5ed50bbf-d6de-48eb-95ef-66d9209bf84d" absoluteBounds="1.14, 9.8671324869990347, 2.0949999999999998, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0828adf7-b85b-4248-998a-36f15233066c" absoluteBounds="5.375, 5.375, 1.5, 1.6683043545484537" hideQualifiedName="false" increaseHeight="0.18800345897674561" customColor="181, 193, 223">
+      <classMoniker Id="9af893e3-38e8-4271-9083-8ca9d70c569b" LastKnownName="ConfiguracionAvion" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="15bda7b5-a205-49c1-a98f-01e883771789" absoluteBounds="5.39, 5.89033563931783, 1.4700000000000002, 0.84179684768120444" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a52d4b8e-6feb-45ba-952f-9c0baa31f08c" absoluteBounds="5.39, 6.7421324869990347, 1.4700000000000002, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

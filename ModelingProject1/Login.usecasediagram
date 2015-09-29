@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="0a26b48b-d3a3-44f5-b9b3-57f2c961a3e1" name="Login" linkedPackageId="767f5b5a-c8a3-4f5c-acba-2c401020d62c" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="cd691e94-2042-4cf5-8fb8-c9b5d5943232">
+      <profileInstance Id="712ee253-ffb4-4c1b-81eb-5e2b0ad2c3c7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="29065efa-7ec8-4c0b-b2a0-61772adfbc4b">
+      <profileInstance Id="21077ba3-1123-44ab-b4ae-31e88b070ee7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ba1592ee-2011-439d-be7f-7a5df8be60bb" name="Actor1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8b40ad6-e747-4a9f-a39c-5d6a04784293" />
+        <targetEnds>
+          <association Id="a09fe164-8a29-4b2d-a950-43248a6dc3df" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4beeea6b-60b2-49ac-b753-6fdbda48ca22" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36919e78-ac27-4e90-9672-c5fd28788fc6" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8bb4ee01-46ba-44a4-a5a6-eb1722a47c09" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd87dba6-bd16-484c-85f2-3f5fe0905060" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3ae6592-497a-4ad4-bcca-739898d400ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="28894f3f-1b41-401b-80ba-46a02cc1b706" />
+          </association>
+          <association Id="fd7c6caa-493f-4b75-88e4-1e5177ddba51" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Logout" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15789f24-d3fc-42f0-8769-2299dbaabb16" LastKnownName="Logout" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="670a84f4-4b89-4171-9b11-35398f7fa504" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1eefb666-0e68-47fe-a733-292a7a34300e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="69b5ce0a-fed6-4118-a776-930560e5d5ce" name="Logout" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a59d5862-d37a-4be9-afc9-5008f8245de2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="97bdd52a-0dbd-432f-beff-1a4054755f26" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4beeea6b-60b2-49ac-b753-6fdbda48ca22" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="827abc0b-789d-4cce-9b19-c33e3177ffed" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15789f24-d3fc-42f0-8769-2299dbaabb16" name="Logout" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="799a0f52-ac54-492a-bfc0-98edb0b83980" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="767f5b5a-c8a3-4f5c-acba-2c401020d62c" name="ModelingProject1">
+    <elementDefinition Id="7e03c0ba-ca53-44ba-9272-ec562e0ad312" />
+  </package>
+</useCaseModelRoot>

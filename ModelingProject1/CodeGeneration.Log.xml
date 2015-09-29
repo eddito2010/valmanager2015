@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-07-22T00:03:49" Importance="Medium" Text="ModelingProject1's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ModelingProject1::Notams' -  (Class), 'ModelingProject1::VueloNotam' -  (Class), 'ModelingProject1::Airport' -  (Class), 'ModelingProject1::Pais' -  (Class), 'ModelingProject1::Ciudad' -  (Class), 'ModelingProject1::Itinerario' -  (Class), 'ModelingProject1::VariableFallo' -  (Class), 'ModelingProject1::Simulador' -  (Class), 'ModelingProject1::PlanVuelo' -  (Class), 'ModelingProject1::Vuelo' -  (Class), 'ModelingProject1::VariableVuelo' -  (Class), 'ModelingProject1::EventoVuelo' -  (Class), 'ModelingProject1::VueloFallo' -  (Class), 'ModelingProject1::Pistas' -  (Class), 'ModelingProject1::Estado' -  (Class), 'ModelingProject1::TipoPista' -  (Class) " />
+  <Message Timestamp="2015-07-22T00:03:52" Importance="Medium" Text="'ModelingProject1::Notams' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Notams.cs" />
+  <Message Timestamp="2015-07-22T00:03:53" Importance="Medium" Text="'ModelingProject1::VueloNotam' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\VueloNotam.cs" />
+  <Message Timestamp="2015-07-22T00:03:56" Importance="Medium" Text="'ModelingProject1::Airport' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Airport.cs" />
+  <Message Timestamp="2015-07-22T00:03:57" Importance="Medium" Text="'ModelingProject1::Pais' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Pais.cs" />
+  <Message Timestamp="2015-07-22T00:03:59" Importance="Medium" Text="'ModelingProject1::Ciudad' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Ciudad.cs" />
+  <Message Timestamp="2015-07-22T00:04:01" Importance="Medium" Text="'ModelingProject1::Itinerario' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Itinerario.cs" />
+  <Message Timestamp="2015-07-22T00:04:03" Importance="Medium" Text="'ModelingProject1::VariableFallo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\VariableFallo.cs" />
+  <Message Timestamp="2015-07-22T00:04:04" Importance="Medium" Text="'ModelingProject1::Simulador' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Simulador.cs" />
+  <Message Timestamp="2015-07-22T00:04:06" Importance="Medium" Text="'ModelingProject1::PlanVuelo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\PlanVuelo.cs" />
+  <Message Timestamp="2015-07-22T00:04:08" Importance="Medium" Text="'ModelingProject1::Vuelo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Vuelo.cs" />
+  <Message Timestamp="2015-07-22T00:04:11" Importance="Medium" Text="'ModelingProject1::VariableVuelo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\VariableVuelo.cs" />
+  <Message Timestamp="2015-07-22T00:04:13" Importance="Medium" Text="'ModelingProject1::EventoVuelo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\EventoVuelo.cs" />
+  <Message Timestamp="2015-07-22T00:04:15" Importance="Medium" Text="'ModelingProject1::VueloFallo' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\VueloFallo.cs" />
+  <Message Timestamp="2015-07-22T00:04:17" Importance="Medium" Text="'ModelingProject1::Pistas' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Pistas.cs" />
+  <Message Timestamp="2015-07-22T00:04:18" Importance="Medium" Text="'ModelingProject1::Estado' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\Estado.cs" />
+  <Message Timestamp="2015-07-22T00:04:19" Importance="Medium" Text="'ModelingProject1::TipoPista' -  (Class) : success (file created) - D:\Trabajo\ModelingProject1\ModelingProject1Lib\GeneratedCode\TipoPista.cs" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Medium" Text="ModelingProject1's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ModelingProject1::Notams' -  (Class), 'ModelingProject1::VueloNotam' -  (Class), 'ModelingProject1::Airport' -  (Class), 'ModelingProject1::Pais' -  (Class), 'ModelingProject1::Ciudad' -  (Class), 'ModelingProject1::Itinerario' -  (Class), 'ModelingProject1::VariableFallo' -  (Class), 'ModelingProject1::Simulador' -  (Class), 'ModelingProject1::PlanVuelo' -  (Class), 'ModelingProject1::Vuelo' -  (Class), 'ModelingProject1::VariableVuelo' -  (Class), 'ModelingProject1::EventoVuelo' -  (Class), 'ModelingProject1::VueloFallo' -  (Class), 'ModelingProject1::Pistas' -  (Class), 'ModelingProject1::Estado' -  (Class), 'ModelingProject1::TipoPista' -  (Class) " />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::Notams' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::VueloNotam' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::Airport' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::Pais' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::Ciudad' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::Itinerario' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:20" Importance="Diagnostic" Text="'ModelingProject1::VariableFallo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::Simulador' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::PlanVuelo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::Vuelo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::VariableVuelo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::EventoVuelo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::VueloFallo' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:21" Importance="Diagnostic" Text="'ModelingProject1::Pistas' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:22" Importance="Diagnostic" Text="'ModelingProject1::Estado' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:22" Importance="Diagnostic" Text="'ModelingProject1::TipoPista' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-07-22T00:04:22" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

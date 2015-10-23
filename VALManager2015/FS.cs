@@ -4,65 +4,35 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 
 public class FS
 {
-	private int id
+    private string _nombre;
+    private string _path;
+    private ConnectionModule _connectionModule;
+
+	public string Nombre
 	{
-		get;
-		set;
+        get { return _nombre; }
+        set { _nombre = value; }
 	}
 
-	private string nombre
+	public string Path
 	{
-		get;
-		set;
+        get { return _path; }
+        set { _path = value; }
 	}
 
-	private string path
+	public ConnectionModule ConnectionModule
 	{
-		get;
-		set;
+        get { return _connectionModule; }
+        set { _connectionModule = value; }
 	}
 
-	private ConnectionModule connectionModule
-	{
-		get;
-		set;
-	}
-
-    public void SetNombre(string value)
+    public FS()
     {
-        nombre = value;
+        _connectionModule = new ConnectionModule();
     }
-
-    public void SetPath(string value)
-    {
-        path = value;
-    }
-
-    public string GetNombre()
-    {
-        return nombre;
-    }
-
-    public string GetPath()
-    {
-        return path;
-    }
-
-    public void SetConnectionModule(ConnectionModule cm)
-    {
-        connectionModule = cm;
-    }
-
-    public ConnectionModule GetConnectionModule()
-    {
-        return connectionModule;
-    }
-}
+ }
 

@@ -10,6 +10,7 @@ namespace VALManager2015
 {
     static class Program
     {
+        //Constantes para el encriptamiento
         public const string PASSPHRASE = "Pas5pr@se";           // can be any string
         public const string SALTVALUE = "s@1tValue";            // can be any string
         public const string HASHALGORITHM = "SHA1";             // can be "MD5"
@@ -20,9 +21,10 @@ namespace VALManager2015
 
         public struct Caminos
         {
-            public static string fsPath;
-            public static string systemCfg = Path.Combine(Application.StartupPath, "Config\\config.ini");
-            public static string database = Path.Combine(Application.StartupPath, "BaseDatos\\simucubamanager2015.db");
+            public static string systemCfgDirectory = Path.Combine(Application.StartupPath, "Config");
+            public static string systemCfgFileIni = Path.Combine(systemCfgDirectory, "config.ini");
+            public static string systemCfgFileXml = Path.Combine(systemCfgDirectory, "config.xml");
+            public static string databaseFile = Path.Combine(Application.StartupPath, @"BaseDatos\simucubamanager2015.db");
             public static string airlineCfg;
             public static string airlineProfileDirectory = Path.Combine(Application.StartupPath, "VA_Profiles");
         }
@@ -33,10 +35,11 @@ namespace VALManager2015
         public static bool loggedUser = false;
 
         public static string activeAirline = "";
+        public static List<Aerolinea> AerolineaList = new List<Aerolinea>();
 
         //Declaracion de clases
-        public static FS Fs = new FS();
-        public static ConnectionModule ConnectionModule = new ConnectionModule();
+        public static Configuracion Config = new Configuracion();
+        public static Aerolinea Aerolinea = new Aerolinea();
         public static Piloto Piloto = new Piloto();
 
         //Coneccion con la BD

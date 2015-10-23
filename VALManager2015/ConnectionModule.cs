@@ -4,49 +4,24 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
 
 public class ConnectionModule
 {
-	private int id
+    private string _moduleName;
+    private string _modulePath;
+
+	public string ModuleName
 	{
-		get;
-		set;
+        get { return _moduleName; }
+        set { _moduleName = value; }
 	}
 
-	private string module
+	public string ModulePath
 	{
-		get;
-		set;
+        get { return _modulePath; }
+        set { _modulePath = value; }
 	}
 
-	private string pathModule
-	{
-		get;
-		set;
-	}
-
-    public void SetModuleName(string name)
-    {
-        module = name;
-    }
-
-    public string GetModuleName()
-    {
-        return module;
-    }
-
-    public void SetPathModule(string path)
-    {
-        pathModule = path;
-    }
-
-    public string GetPathModule()
-    {
-        return pathModule;
-    }
 }
 

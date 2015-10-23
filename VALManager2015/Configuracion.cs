@@ -8,7 +8,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ini;
+using System.Xml.Serialization;
+using System.Xml;
+using System.IO;
+
 
 namespace VALManager2015
 {
@@ -16,42 +19,58 @@ namespace VALManager2015
     public class Configuracion
     {
 
-        IniFile systemCfgFile = new IniFile(Program.Caminos.systemCfg);
+        private FS _fs;
+        private string _connectionModule;
+        private string _aerolinea;
 
-        private int idFs
+
+        public FS Fs
         {
-            get;
-            set;
+            get { return _fs; }
+            set { _fs = value; }
         }
 
-        private int idAerolinea
+        public string ConnectionModule
         {
-            get;
-            set;
+            get { return _connectionModule; }
+            set { _connectionModule = value; }
         }
 
-        private string pathCfgFile
+        public string Aerolinea
         {
-            get;
-            set;
-        }
-
-        private int id
-        {
-            get;
-            set;
+            get { return _aerolinea; }
+            set { _aerolinea = value; }
         }
 
         public Configuracion()
         {
-            ReadCfgFile();
+            _fs = new FS();
         }
 
-        public void ReadCfgFile()
+        public void SaveDataToXml(string xmlFileName)
         {
-            Program.Caminos.fsPath = systemCfgFile.IniReadValue("PATH", "FSPATH");
-            Program.activeAirline = systemCfgFile.IniReadValue("AIRLINE", "NAME");
+            XmlSerializer serializer = new XmlSerializer(typeof(Configuracion));
+            TextWriter writer = new StreamWriter(xmlFileName);
+            serializer.Serialize(writer, this);
+            writer.Close();
         }
+
+        public void ReadCfgFileXml(string xmlFileName)
+        {
+            if (File.Exists(xmlFileName))
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Configuracion));
+                using (FileStream fs = new FileStream(xmlFileName, FileMode.Open))
+                {
+                    Configuracion _config;
+                    _config = (Configuracion)serializer.Deserialize(fs);
+                    Fs = _config.Fs;
+                    ConnectionModule = _config.ConnectionModule;
+                    Aerolinea = _config.Aerolinea;
+                }
+            }
+        }
+
     }
 }
 

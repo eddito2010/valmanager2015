@@ -33,18 +33,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtFsPath = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbFSUIPC = new System.Windows.Forms.RadioButton();
-            this.rbSimConnect = new System.Windows.Forms.RadioButton();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.cmdGetFolder = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.rbFSX = new System.Windows.Forms.RadioButton();
-            this.rbFS2004 = new System.Windows.Forms.RadioButton();
             this.rbP3D = new System.Windows.Forms.RadioButton();
+            this.rbFSX = new System.Windows.Forms.RadioButton();
+            this.rbFS9 = new System.Windows.Forms.RadioButton();
+            this.cmdGetFolder = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rbSimConnect = new System.Windows.Forms.RadioButton();
+            this.rbFSUIPC = new System.Windows.Forms.RadioButton();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmdClose
@@ -98,39 +98,49 @@
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
+            // groupBox3
             // 
-            this.groupBox2.Controls.Add(this.rbSimConnect);
-            this.groupBox2.Controls.Add(this.rbFSUIPC);
-            this.groupBox2.Location = new System.Drawing.Point(215, 57);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(198, 74);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Módulo a través del cual conectarse";
+            this.groupBox3.Controls.Add(this.rbP3D);
+            this.groupBox3.Controls.Add(this.rbFSX);
+            this.groupBox3.Controls.Add(this.rbFS9);
+            this.groupBox3.Location = new System.Drawing.Point(9, 57);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(198, 74);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Versión del Simulador";
             // 
-            // rbFSUIPC
+            // rbP3D
             // 
-            this.rbFSUIPC.AutoSize = true;
-            this.rbFSUIPC.Checked = true;
-            this.rbFSUIPC.Location = new System.Drawing.Point(20, 22);
-            this.rbFSUIPC.Name = "rbFSUIPC";
-            this.rbFSUIPC.Size = new System.Drawing.Size(63, 17);
-            this.rbFSUIPC.TabIndex = 0;
-            this.rbFSUIPC.TabStop = true;
-            this.rbFSUIPC.Text = "FSUIPC";
-            this.rbFSUIPC.UseVisualStyleBackColor = true;
-            this.rbFSUIPC.CheckedChanged += new System.EventHandler(this.rbFSUIPC_CheckedChanged);
+            this.rbP3D.AutoSize = true;
+            this.rbP3D.Location = new System.Drawing.Point(20, 51);
+            this.rbP3D.Name = "rbP3D";
+            this.rbP3D.Size = new System.Drawing.Size(46, 17);
+            this.rbP3D.TabIndex = 2;
+            this.rbP3D.Text = "P3D";
+            this.rbP3D.UseVisualStyleBackColor = true;
             // 
-            // rbSimConnect
+            // rbFSX
             // 
-            this.rbSimConnect.AutoSize = true;
-            this.rbSimConnect.Location = new System.Drawing.Point(20, 45);
-            this.rbSimConnect.Name = "rbSimConnect";
-            this.rbSimConnect.Size = new System.Drawing.Size(82, 17);
-            this.rbSimConnect.TabIndex = 1;
-            this.rbSimConnect.Text = "SimConnect";
-            this.rbSimConnect.UseVisualStyleBackColor = true;
+            this.rbFSX.AutoSize = true;
+            this.rbFSX.Location = new System.Drawing.Point(20, 34);
+            this.rbFSX.Name = "rbFSX";
+            this.rbFSX.Size = new System.Drawing.Size(45, 17);
+            this.rbFSX.TabIndex = 1;
+            this.rbFSX.Text = "FSX";
+            this.rbFSX.UseVisualStyleBackColor = true;
+            // 
+            // rbFS9
+            // 
+            this.rbFS9.AutoSize = true;
+            this.rbFS9.Checked = true;
+            this.rbFS9.Location = new System.Drawing.Point(20, 17);
+            this.rbFS9.Name = "rbFS9";
+            this.rbFS9.Size = new System.Drawing.Size(44, 17);
+            this.rbFS9.TabIndex = 0;
+            this.rbFS9.TabStop = true;
+            this.rbFS9.Text = "FS9";
+            this.rbFS9.UseVisualStyleBackColor = true;
             // 
             // cmdGetFolder
             // 
@@ -143,49 +153,38 @@
             this.cmdGetFolder.UseVisualStyleBackColor = true;
             this.cmdGetFolder.Click += new System.EventHandler(this.cmdGetFolder_Click);
             // 
-            // groupBox3
+            // groupBox2
             // 
-            this.groupBox3.Controls.Add(this.rbP3D);
-            this.groupBox3.Controls.Add(this.rbFSX);
-            this.groupBox3.Controls.Add(this.rbFS2004);
-            this.groupBox3.Location = new System.Drawing.Point(9, 57);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(198, 74);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Versión del Simulador";
+            this.groupBox2.Controls.Add(this.rbSimConnect);
+            this.groupBox2.Controls.Add(this.rbFSUIPC);
+            this.groupBox2.Location = new System.Drawing.Point(215, 57);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(198, 74);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Módulo a través del cual conectarse";
             // 
-            // rbFSX
+            // rbSimConnect
             // 
-            this.rbFSX.AutoSize = true;
-            this.rbFSX.Location = new System.Drawing.Point(20, 34);
-            this.rbFSX.Name = "rbFSX";
-            this.rbFSX.Size = new System.Drawing.Size(45, 17);
-            this.rbFSX.TabIndex = 1;
-            this.rbFSX.Text = "FSX";
-            this.rbFSX.UseVisualStyleBackColor = true;
+            this.rbSimConnect.AutoSize = true;
+            this.rbSimConnect.Location = new System.Drawing.Point(20, 45);
+            this.rbSimConnect.Name = "rbSimConnect";
+            this.rbSimConnect.Size = new System.Drawing.Size(82, 17);
+            this.rbSimConnect.TabIndex = 1;
+            this.rbSimConnect.Text = "SimConnect";
+            this.rbSimConnect.UseVisualStyleBackColor = true;
             // 
-            // rbFS2004
+            // rbFSUIPC
             // 
-            this.rbFS2004.AutoSize = true;
-            this.rbFS2004.Checked = true;
-            this.rbFS2004.Location = new System.Drawing.Point(20, 17);
-            this.rbFS2004.Name = "rbFS2004";
-            this.rbFS2004.Size = new System.Drawing.Size(62, 17);
-            this.rbFS2004.TabIndex = 0;
-            this.rbFS2004.TabStop = true;
-            this.rbFS2004.Text = "FS2004";
-            this.rbFS2004.UseVisualStyleBackColor = true;
-            // 
-            // rbP3D
-            // 
-            this.rbP3D.AutoSize = true;
-            this.rbP3D.Location = new System.Drawing.Point(20, 51);
-            this.rbP3D.Name = "rbP3D";
-            this.rbP3D.Size = new System.Drawing.Size(46, 17);
-            this.rbP3D.TabIndex = 2;
-            this.rbP3D.Text = "P3D";
-            this.rbP3D.UseVisualStyleBackColor = true;
+            this.rbFSUIPC.AutoSize = true;
+            this.rbFSUIPC.Checked = true;
+            this.rbFSUIPC.Location = new System.Drawing.Point(20, 22);
+            this.rbFSUIPC.Name = "rbFSUIPC";
+            this.rbFSUIPC.Size = new System.Drawing.Size(63, 17);
+            this.rbFSUIPC.TabIndex = 0;
+            this.rbFSUIPC.TabStop = true;
+            this.rbFSUIPC.Text = "FSUIPC";
+            this.rbFSUIPC.UseVisualStyleBackColor = true;
             // 
             // ConfiguracionSimulador
             // 
@@ -201,12 +200,13 @@
             this.Name = "ConfiguracionSimulador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración del Simulador";
+            this.Load += new System.EventHandler(this.ConfiguracionSimulador_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -226,6 +226,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton rbP3D;
         private System.Windows.Forms.RadioButton rbFSX;
-        private System.Windows.Forms.RadioButton rbFS2004;
+        private System.Windows.Forms.RadioButton rbFS9;
     }
 }

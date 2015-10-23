@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
+using System.Runtime.InteropServices;
 
 namespace VALManager2015
 {
@@ -94,19 +96,23 @@ namespace VALManager2015
         /// <param name="e"></param>
         void m_oWorker_DoWork(object sender, DoWorkEventArgs e)
         {
-            //these operations are real, not a fake so, let them here forever
-            //if (!Directory.Exists(Path.Combine(Application.StartupPath, "Config")))
-            //    Directory.CreateDirectory(Path.Combine(Application.StartupPath, "Config"));
-            m_oWorker.ReportProgress(1);
+            m_oWorker.ReportProgress(5);
 
-            //if (!File.Exists(Path.Combine(Application.StartupPath, "DigitalizeRobotCheck.dll")))
-            //{
-            //    Program.CloseApp = true;
-            //    MyMessageBox.Show("There are mising files neded to the application works properly");
-            //}
-            m_oWorker.ReportProgress(2);
+            if (!Directory.Exists(Program.Caminos.airlineProfileDirectory))
+            {
+                Directory.CreateDirectory(Program.Caminos.airlineProfileDirectory);
+            }
+
+            m_oWorker.ReportProgress(10);
+
+            if (!Directory.Exists(Program.Caminos.systemCfgDirectory))
+            {
+                Directory.CreateDirectory(Program.Caminos.systemCfgDirectory);
+            }
+            
+            
             //this loop is only to show the splash, put here the real functionalities
-            for (int i = 3; i < 100; i++)
+            for (int i = 11; i < 100; i++)
             {
                 Thread.Sleep(10);
 

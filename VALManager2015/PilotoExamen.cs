@@ -14,18 +14,34 @@ namespace VALManager2015
 
     public class PilotoExamen
     {
-        private int id { get; set; }
+        private Examen _examen;
+        private string _examinador;
+        private DateTime _fecha;
+        private string _observaciones;
 
-        private ExamenPiloto examen { get; set; }
+        public Examen Examen
+        {
+            get { return _examen; }
+            set { _examen = value; }
+        }
 
-        private Piloto examinador { get; set; }
+        public string _examinador
+        {
+            get { return _examinador; }
+            set { _examinador = value; }
+        }
 
-        private CalificacionExamenPiloto calificacion { get; set; }
+        public DateTime Fecha
+        {
+            get { return _fecha; }
+            set { _fecha = value; }
+        }
 
-        private DateTime fecha { get; set; }
-
-        private string observaciones { get; set; }
-
+        public string Observaciones
+        {
+            get { return _observaciones; }
+            set { _observaciones = value; }
+        }
     }
 }
 

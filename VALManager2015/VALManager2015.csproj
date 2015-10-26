@@ -94,12 +94,12 @@
     <Compile Include="CryptoTools.cs" />
     <Compile Include="Estado.cs" />
     <Compile Include="EventoVuelo.cs" />
-    <Compile Include="ExamenPiloto.cs" />
+    <Compile Include="Examen.cs" />
+    <Compile Include="PilotoExamen.cs" />
     <Compile Include="FabricanteAvion.cs" />
     <Compile Include="FabricanteMotorAvion.cs" />
     <Compile Include="FlotaAvion.cs" />
     <Compile Include="FS.cs" />
-    <Compile Include="HabilitacionPiloto.cs" />
     <Compile Include="INIFile.cs" />
     <Compile Include="InitialDataCreator.cs" />
     <Compile Include="Itinerario.cs" />
@@ -132,7 +132,6 @@
     <Compile Include="Piloto.cs" />
     <Compile Include="PilotoAvion.cs" />
     <Compile Include="PilotoCurso.cs" />
-    <Compile Include="PilotoExamen.cs" />
     <Compile Include="PilotoHabilitacion.cs" />
     <Compile Include="PilotoSimulador.cs" />
     <Compile Include="Pistas.cs" />
@@ -197,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ToDo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.97.0\build\net45\System.Data.SQLite.Core.targets')" />

@@ -41,12 +41,17 @@ namespace VALManager2015
                 login.ShowDialog();
             }
 
-            initInterface();
-            initConfigurationGlobalVars();
-            initConfigurationRibbonTab();
+            initAll();
 
             this.Show();
             ClockLT.Enabled = true;
+        }
+
+        public void initAll()
+        {
+            initInterface();
+            initConfigurationGlobalVars();
+            initConfigurationRibbonTab();
         }
 
         private void initConfigurationGlobalVars()
@@ -108,8 +113,6 @@ namespace VALManager2015
                     ribbonTabVuelos.Visible = true;
 
                     //Tab Config
-                    ribbonButtonEditAerolinea.Enabled = true;
-                    ribbonButtonNewAerolinea.Enabled = true;
 
                     //Status Bar
                     lblUser.Text = "Administrador";
@@ -133,8 +136,6 @@ namespace VALManager2015
                     ribbonTabVuelos.Visible = true;
 
                     //Tab Config
-                    ribbonButtonEditAerolinea.Enabled = true;
-                    ribbonButtonNewAerolinea.Enabled = true;
 
                     //Status Bar
                     lblUser.Text = "";
@@ -142,6 +143,34 @@ namespace VALManager2015
 
             }
         }
+
+        private void deInitInterface()
+        {
+            Program.loggedUser = false;
+            //Tab Asignaciones
+            ribbonTabAsignaciones.Visible = false;
+
+            //Tab Reportes
+            ribbonTabReportes.Visible = false;
+
+            //Tab Tools
+            ribbonTabTools.Visible = false;
+
+            //Tab ImportExport
+            ribbonTabImportExport.Visible = false;
+
+            //Tab Admin
+            ribbonTabAdmin.Visible = false;
+
+            //Tab Vuelos
+            ribbonTabVuelos.Visible = false;
+
+            //Tab Config
+
+            //Status Bar
+            lblUser.Text = "";
+        }
+
 
         private void updateClock(object state, System.Timers.ElapsedEventArgs e)
         {
@@ -169,6 +198,10 @@ namespace VALManager2015
         {
             NewUser newUser = new NewUser();
             newUser.ShowDialog();
+            deInitInterface();
+            Login login = new Login();
+            login.ShowDialog();
+            initAll();
         }
 
         private void fillVAList()
@@ -213,11 +246,19 @@ namespace VALManager2015
 
         private void ribbonButtonNewAerolinea_Click(object sender, EventArgs e)
         {
+        }
+
+        private void ribbonButtonEditAirline_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void ribbonButtonNuevaAerolinea_Click(object sender, EventArgs e)
+        {
             NewAirline frmNewAirline = new NewAirline();
             frmNewAirline.ShowDialog();
         }
 
-        private void ribbonButtonEditAirline_Click(object sender, EventArgs e)
+        private void ribbonButtonEditaAerolinea_Click(object sender, EventArgs e)
         {
             NewAirline frmNewAirline = new NewAirline(Program.Aerolinea);
             frmNewAirline.ShowDialog();

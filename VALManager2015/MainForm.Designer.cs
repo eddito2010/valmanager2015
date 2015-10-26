@@ -44,7 +44,7 @@
             this.ribbonLabel1 = new System.Windows.Forms.RibbonLabel();
             this.ribbonCBAirLineList = new System.Windows.Forms.RibbonComboBox();
             this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
-            this.cmdNewPilot = new System.Windows.Forms.RibbonButton();
+            this.cmdNewUser = new System.Windows.Forms.RibbonButton();
             this.ribbonComboBox1 = new System.Windows.Forms.RibbonComboBox();
             this.ribbonComboBox2 = new System.Windows.Forms.RibbonComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -54,8 +54,9 @@
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblClockUTC = new System.Windows.Forms.ToolStripStatusLabel();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.ribbonButtonNewAerolinea = new System.Windows.Forms.RibbonButton();
-            this.ribbonButtonEditAerolinea = new System.Windows.Forms.RibbonButton();
+            this.ribbonPanelAerolinea = new System.Windows.Forms.RibbonPanel();
+            this.ribbonButtonNuevaAerolinea = new System.Windows.Forms.RibbonButton();
+            this.ribbonButtonEditaAerolinea = new System.Windows.Forms.RibbonButton();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +118,7 @@
             // 
             // ribbonTabAdmin
             // 
+            this.ribbonTabAdmin.Panels.Add(this.ribbonPanelAerolinea);
             this.ribbonTabAdmin.Text = "Administración";
             this.ribbonTabAdmin.Visible = false;
             // 
@@ -153,8 +155,6 @@
             // 
             this.ribbonPanel3.Items.Add(this.ribbonLabel1);
             this.ribbonPanel3.Items.Add(this.ribbonCBAirLineList);
-            this.ribbonPanel3.Items.Add(this.ribbonButtonNewAerolinea);
-            this.ribbonPanel3.Items.Add(this.ribbonButtonEditAerolinea);
             this.ribbonPanel3.Text = "Aerolíneas";
             // 
             // ribbonLabel1
@@ -171,15 +171,15 @@
             // 
             // ribbonPanel2
             // 
-            this.ribbonPanel2.Items.Add(this.cmdNewPilot);
+            this.ribbonPanel2.Items.Add(this.cmdNewUser);
             this.ribbonPanel2.Text = "Usuarios";
             // 
-            // cmdNewPilot
+            // cmdNewUser
             // 
-            this.cmdNewPilot.Image = ((System.Drawing.Image)(resources.GetObject("cmdNewPilot.Image")));
-            this.cmdNewPilot.SmallImage = ((System.Drawing.Image)(resources.GetObject("cmdNewPilot.SmallImage")));
-            this.cmdNewPilot.Text = "Nuevo  Piloto";
-            this.cmdNewPilot.Click += new System.EventHandler(this.cmdNewUser_Click);
+            this.cmdNewUser.Image = ((System.Drawing.Image)(resources.GetObject("cmdNewUser.Image")));
+            this.cmdNewUser.SmallImage = ((System.Drawing.Image)(resources.GetObject("cmdNewUser.SmallImage")));
+            this.cmdNewUser.Text = "Nuevo  Usuario";
+            this.cmdNewUser.Click += new System.EventHandler(this.cmdNewUser_Click);
             // 
             // ribbonComboBox1
             // 
@@ -236,21 +236,25 @@
             this.lblClockUTC.Size = new System.Drawing.Size(49, 17);
             this.lblClockUTC.Text = "00:00:00";
             // 
-            // ribbonButtonNewAerolinea
+            // ribbonPanelAerolinea
             // 
-            this.ribbonButtonNewAerolinea.Enabled = false;
-            this.ribbonButtonNewAerolinea.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonNewAerolinea.Image")));
-            this.ribbonButtonNewAerolinea.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonNewAerolinea.SmallImage")));
-            this.ribbonButtonNewAerolinea.Text = "Nueva Aerolínea";
-            this.ribbonButtonNewAerolinea.Click += new System.EventHandler(this.ribbonButtonNewAerolinea_Click);
+            this.ribbonPanelAerolinea.Items.Add(this.ribbonButtonNuevaAerolinea);
+            this.ribbonPanelAerolinea.Items.Add(this.ribbonButtonEditaAerolinea);
+            this.ribbonPanelAerolinea.Text = "Aerolínea";
             // 
-            // ribbonButtonEditAerolinea
+            // ribbonButtonNuevaAerolinea
             // 
-            this.ribbonButtonEditAerolinea.Enabled = false;
-            this.ribbonButtonEditAerolinea.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonEditAerolinea.Image")));
-            this.ribbonButtonEditAerolinea.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonEditAerolinea.SmallImage")));
-            this.ribbonButtonEditAerolinea.Text = "Editar Aerolínea";
-            this.ribbonButtonEditAerolinea.Click += new System.EventHandler(this.ribbonButtonEditAirline_Click);
+            this.ribbonButtonNuevaAerolinea.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonNuevaAerolinea.Image")));
+            this.ribbonButtonNuevaAerolinea.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonNuevaAerolinea.SmallImage")));
+            this.ribbonButtonNuevaAerolinea.Text = "Nueva Aerolínea";
+            this.ribbonButtonNuevaAerolinea.Click += new System.EventHandler(this.ribbonButtonNuevaAerolinea_Click);
+            // 
+            // ribbonButtonEditaAerolinea
+            // 
+            this.ribbonButtonEditaAerolinea.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonEditaAerolinea.Image")));
+            this.ribbonButtonEditaAerolinea.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonEditaAerolinea.SmallImage")));
+            this.ribbonButtonEditaAerolinea.Text = "Editar Aerolínea";
+            this.ribbonButtonEditaAerolinea.Click += new System.EventHandler(this.ribbonButtonEditaAerolinea_Click);
             // 
             // MainForm
             // 
@@ -295,7 +299,7 @@
         private System.Windows.Forms.ToolStripStatusLabel lblUser;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
         private System.Windows.Forms.RibbonPanel ribbonPanel2;
-        private System.Windows.Forms.RibbonButton cmdNewPilot;
+        private System.Windows.Forms.RibbonButton cmdNewUser;
         private System.Windows.Forms.RibbonTab ribbonTabAsignaciones;
         private System.Windows.Forms.RibbonTab ribbonTabReportes;
         private System.Windows.Forms.RibbonTab ribbonTabAdmin;
@@ -303,8 +307,9 @@
         private System.Windows.Forms.RibbonTab ribbonTabImportExport;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.RibbonTab ribbonTabVuelos;
-        private System.Windows.Forms.RibbonButton ribbonButtonNewAerolinea;
-        private System.Windows.Forms.RibbonButton ribbonButtonEditAerolinea;
+        private System.Windows.Forms.RibbonPanel ribbonPanelAerolinea;
+        private System.Windows.Forms.RibbonButton ribbonButtonNuevaAerolinea;
+        private System.Windows.Forms.RibbonButton ribbonButtonEditaAerolinea;
 
 
     }

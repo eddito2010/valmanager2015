@@ -138,12 +138,16 @@ namespace VALManager2015
                 tempContent = CryptoTools.Decrypt(content, Program.PASSPHRASE, Program.SALTVALUE, Program.HASHALGORITHM, Program.PASSWORDITERATIONS, Program.INITVECTOR, Program.KEYSIZE);
                 var cadena = tempContent.Replace("\r\n", "@");
                 var cadenas = cadena.Split('@');
-                usuario = cadenas[0];
-                password = cadenas[1];
-                if(usuario == user && password == psw)
+                for (int i = 0; i < cadenas.Count(); i+=3)
                 {
-                    _return = true;
-                    break;
+                    usuario = cadenas[i];
+                    password = cadenas[i+1];
+                    if (usuario == user && password == psw)
+                    {
+                        _return = true;
+                        Program.anonimo = false;
+                        break;
+                    }
                 }
             }
 

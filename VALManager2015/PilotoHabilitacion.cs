@@ -14,9 +14,9 @@ namespace VALManager2015
 
     public class PilotoHabilitacion
     {
-        private int id { get; set; }
+        private string habilitacion;
 
-        private HabilitacionPiloto habilitacion { get; set; }
+
 
     }
 }

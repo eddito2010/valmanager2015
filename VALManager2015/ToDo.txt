@@ -1,0 +1,6 @@
+﻿ToDo:
+
+*-Cuando se cree un nuevo usuario que se le de salvar, que salga la ventana para loguearse como él.
+-Cuando se loguee alguien, cargar sus datos (Cargar la clase Piloto)
+-Calcular un HASH para cada xml
+

@@ -35,7 +35,6 @@ namespace VALManager2015
             Program.loggedUser = UsuariosToolBox.getUserFromFile("usuarios.dat", txtUser.Text, txtPw.Text);
             if (Program.loggedUser)
             {
-                Program.loggedUser = true;
                 Close();
             }
             else if (txtUser.Text == "eddy" && txtPw.Text == "eddy")

@@ -27,11 +27,9 @@ namespace VALManager2015
         {
             if(txtPw1.Text == txtPw2.Text)
             {
-                Program.Piloto.SetUsuario(txtUser.Text);
-                Program.Piloto.SetPassword(txtPw1.Text);
+                Program.Piloto.Usuario = txtUser.Text;
 
-                UsuariosToolBox.addUserToFile("usuarios.dat", Program.Piloto.GetUsuario(), Program.Piloto.GetPassword());
-                Program.Piloto.SetDataToDB();
+                UsuariosToolBox.addUserToFile("usuarios.dat", Program.Piloto.Usuario, txtPw1.Text);
                 Close();
             }
         }
